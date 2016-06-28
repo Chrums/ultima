@@ -115,6 +115,19 @@ proto/fast:
 .PHONY : proto/fast
 
 #=============================================================================
+# Target rules for targets named graphics
+
+# Build rule for target.
+graphics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 graphics
+.PHONY : graphics
+
+# fast build rule for target.
+graphics/fast:
+	$(MAKE) -f graphics/CMakeFiles/graphics.dir/build.make graphics/CMakeFiles/graphics.dir/build
+.PHONY : graphics/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -149,6 +162,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... proto"
+	@echo "... graphics"
 	@echo "... client"
 	@echo "... server"
 .PHONY : help
