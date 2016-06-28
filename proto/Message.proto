@@ -1,0 +1,15 @@
+package ultima;
+
+message Event {
+
+  enum EventType {
+    INPUT = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+  
+  required EventType type = 1;
+  required int32 id = 2;
+  optional string email = 3;
+
+}
