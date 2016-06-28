@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.1
+CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.1/build
+CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles /home/ubuntu/workspace/v1.1/build/proto/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 proto/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles /home/ubuntu/workspace/v1.2/build/proto/CMakeFiles/progress.marks
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 proto/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 proto/clean
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 proto/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 proto/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 proto/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 proto/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 proto/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 proto/CMakeFiles/proto.dir/rule:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 proto/CMakeFiles/proto.dir/rule
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 proto/CMakeFiles/proto.dir/rule
 .PHONY : proto/CMakeFiles/proto.dir/rule
 
 # Convenience name for target.
@@ -112,7 +112,7 @@ proto: proto/CMakeFiles/proto.dir/rule
 
 # fast build rule for target.
 proto/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/build
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/build
 .PHONY : proto/fast
 
 Message.pb.o: Message.pb.cc.o
@@ -120,7 +120,7 @@ Message.pb.o: Message.pb.cc.o
 
 # target to build an object file
 Message.pb.cc.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.o
 .PHONY : Message.pb.cc.o
 
 Message.pb.i: Message.pb.cc.i
@@ -128,7 +128,7 @@ Message.pb.i: Message.pb.cc.i
 
 # target to preprocess a source file
 Message.pb.cc.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.i
 .PHONY : Message.pb.cc.i
 
 Message.pb.s: Message.pb.cc.s
@@ -136,7 +136,7 @@ Message.pb.s: Message.pb.cc.s
 
 # target to generate assembly for a file
 Message.pb.cc.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f proto/CMakeFiles/proto.dir/build.make proto/CMakeFiles/proto.dir/Message.pb.cc.s
 .PHONY : Message.pb.cc.s
 
 # Help Target
@@ -162,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

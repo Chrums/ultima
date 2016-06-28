@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.1
+CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.1/build
+CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles /home/ubuntu/workspace/v1.1/build/server/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles /home/ubuntu/workspace/v1.2/build/server/CMakeFiles/progress.marks
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 server/clean
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 server/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 server/CMakeFiles/server.dir/rule:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/rule
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/rule
 .PHONY : server/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
@@ -112,7 +112,7 @@ server: server/CMakeFiles/server.dir/rule
 
 # fast build rule for target.
 server/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
 server.o: server.cpp.o
@@ -120,7 +120,7 @@ server.o: server.cpp.o
 
 # target to build an object file
 server.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.o
 .PHONY : server.cpp.o
 
 server.i: server.cpp.i
@@ -128,7 +128,7 @@ server.i: server.cpp.i
 
 # target to preprocess a source file
 server.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.i
 .PHONY : server.cpp.i
 
 server.s: server.cpp.s
@@ -136,7 +136,7 @@ server.s: server.cpp.s
 
 # target to generate assembly for a file
 server.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/server.cpp.s
 .PHONY : server.cpp.s
 
 src/GameServer.o: src/GameServer.cpp.o
@@ -144,7 +144,7 @@ src/GameServer.o: src/GameServer.cpp.o
 
 # target to build an object file
 src/GameServer.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.o
 .PHONY : src/GameServer.cpp.o
 
 src/GameServer.i: src/GameServer.cpp.i
@@ -152,7 +152,7 @@ src/GameServer.i: src/GameServer.cpp.i
 
 # target to preprocess a source file
 src/GameServer.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.i
 .PHONY : src/GameServer.cpp.i
 
 src/GameServer.s: src/GameServer.cpp.s
@@ -160,7 +160,7 @@ src/GameServer.s: src/GameServer.cpp.s
 
 # target to generate assembly for a file
 src/GameServer.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/GameServer.cpp.s
 .PHONY : src/GameServer.cpp.s
 
 src/ServerConnection.o: src/ServerConnection.cpp.o
@@ -168,7 +168,7 @@ src/ServerConnection.o: src/ServerConnection.cpp.o
 
 # target to build an object file
 src/ServerConnection.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.o
 .PHONY : src/ServerConnection.cpp.o
 
 src/ServerConnection.i: src/ServerConnection.cpp.i
@@ -176,7 +176,7 @@ src/ServerConnection.i: src/ServerConnection.cpp.i
 
 # target to preprocess a source file
 src/ServerConnection.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.i
 .PHONY : src/ServerConnection.cpp.i
 
 src/ServerConnection.s: src/ServerConnection.cpp.s
@@ -184,7 +184,7 @@ src/ServerConnection.s: src/ServerConnection.cpp.s
 
 # target to generate assembly for a file
 src/ServerConnection.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/ServerConnection.cpp.s
 .PHONY : src/ServerConnection.cpp.s
 
 # Help Target
@@ -216,6 +216,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

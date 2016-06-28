@@ -18,7 +18,6 @@ protected:
     virtual void client_disconnected(std::shared_ptr<Connection> connection) = 0;
 private:
     void resolve(std::shared_ptr<Connection> connection, boost::asio::ip::tcp::resolver::iterator iterator);
-    void resolve_handler(const boost::system::error_code& error, std::shared_ptr<Connection> connection, boost::asio::ip::tcp::resolver::iterator iterator);
     boost::asio::io_service io_service_;
     boost::asio::ip::tcp::resolver resolver_;
 };

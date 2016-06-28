@@ -1,6 +1,7 @@
 #ifndef CONNECTION_H
 #define CONNECTION_H
 
+#include "Message.h"
 #include <memory>
 #include <thread>
 #include <boost/asio.hpp>
@@ -19,11 +20,8 @@ public:
 protected:
     Connection(boost::asio::io_service& io_service);
 private:
-    void send_handler(const boost::system::error_code& error);
     void listen();
-    void listen_handler(const boost::system::error_code& error, size_t bytes_transferred);
     boost::asio::ip::tcp::socket socket_;
-    char bytes_[1024];
 };
 
 #include "Connection.inl"

@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.1
+CMAKE_SOURCE_DIR = /home/ubuntu/workspace/v1.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.1/build
+CMAKE_BINARY_DIR = /home/ubuntu/workspace/v1.2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles /home/ubuntu/workspace/v1.1/build/client/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.1/build/CMakeFiles 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles /home/ubuntu/workspace/v1.2/build/client/CMakeFiles/progress.marks
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/v1.2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 client/clean
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 client/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 client/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 client/preinstall
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 client/CMakeFiles/client.dir/rule:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/rule
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/rule
 .PHONY : client/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -112,7 +112,7 @@ client: client/CMakeFiles/client.dir/rule
 
 # fast build rule for target.
 client/fast:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
 client.o: client.cpp.o
@@ -120,7 +120,7 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -128,7 +128,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -136,7 +136,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 src/ClientConnection.o: src/ClientConnection.cpp.o
@@ -144,7 +144,7 @@ src/ClientConnection.o: src/ClientConnection.cpp.o
 
 # target to build an object file
 src/ClientConnection.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.o
 .PHONY : src/ClientConnection.cpp.o
 
 src/ClientConnection.i: src/ClientConnection.cpp.i
@@ -152,7 +152,7 @@ src/ClientConnection.i: src/ClientConnection.cpp.i
 
 # target to preprocess a source file
 src/ClientConnection.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.i
 .PHONY : src/ClientConnection.cpp.i
 
 src/ClientConnection.s: src/ClientConnection.cpp.s
@@ -160,7 +160,7 @@ src/ClientConnection.s: src/ClientConnection.cpp.s
 
 # target to generate assembly for a file
 src/ClientConnection.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/ClientConnection.cpp.s
 .PHONY : src/ClientConnection.cpp.s
 
 src/GameClient.o: src/GameClient.cpp.o
@@ -168,7 +168,7 @@ src/GameClient.o: src/GameClient.cpp.o
 
 # target to build an object file
 src/GameClient.cpp.o:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.o
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.o
 .PHONY : src/GameClient.cpp.o
 
 src/GameClient.i: src/GameClient.cpp.i
@@ -176,7 +176,7 @@ src/GameClient.i: src/GameClient.cpp.i
 
 # target to preprocess a source file
 src/GameClient.cpp.i:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.i
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.i
 .PHONY : src/GameClient.cpp.i
 
 src/GameClient.s: src/GameClient.cpp.s
@@ -184,7 +184,7 @@ src/GameClient.s: src/GameClient.cpp.s
 
 # target to generate assembly for a file
 src/GameClient.cpp.s:
-	cd /home/ubuntu/workspace/v1.1/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.s
+	cd /home/ubuntu/workspace/v1.2/build && $(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/src/GameClient.cpp.s
 .PHONY : src/GameClient.cpp.s
 
 # Help Target
@@ -216,6 +216,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/v1.1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/workspace/v1.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
