@@ -1,11 +1,11 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef MANAGER_H
+#define MANAGER_H
 
 #include <SDL.h>
 
-class Window {
+class Manager {
 public:
-    Window();
+    Manager();
 };
 
 #endif

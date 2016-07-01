@@ -10,9 +10,8 @@ template <class Derived>
 class Connection : public std::enable_shared_from_this<Derived> {
 public:
     static std::shared_ptr<Derived> create(boost::asio::io_service& io_service);
-    ~Connection();
     void execute();
-    void send();
+    void send(Message& message);
     boost::asio::ip::tcp::socket& socket();
     virtual void process(char* buffer, size_t bytes_transferred) = 0;
     virtual void connected() = 0;
@@ -20,7 +19,7 @@ public:
 protected:
     Connection(boost::asio::io_service& io_service);
 private:
-    void listen();
+    void receive();
     boost::asio::ip::tcp::socket socket_;
 };
 

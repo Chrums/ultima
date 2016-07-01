@@ -5,6 +5,7 @@
 #include <string>
 #include <memory>
 #include <thread>
+#include <vector>
 #include <boost/asio.hpp>
 
 template <class Derived, class Connection>
@@ -20,6 +21,8 @@ private:
     void resolve(std::shared_ptr<Connection> connection, boost::asio::ip::tcp::resolver::iterator iterator);
     boost::asio::io_service io_service_;
     boost::asio::ip::tcp::resolver resolver_;
+    std::thread* thread_;
+    std::vector<std::shared_ptr<Connection>> connections_;
 };
 
 #include "Client.inl"

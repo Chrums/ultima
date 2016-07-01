@@ -6,6 +6,7 @@
 #include <thread>
 #include <utility>
 #include <functional>
+#include <vector>
 #include <boost/asio.hpp>
 
 template <class Derived, class Connection>
@@ -22,6 +23,7 @@ private:
     boost::asio::io_service io_service_;
     std::thread* thread_;
     boost::asio::ip::tcp::acceptor* acceptor_;
+    std::vector<std::shared_ptr<Connection>> connections_;
 };
 
 #include "Server.inl"

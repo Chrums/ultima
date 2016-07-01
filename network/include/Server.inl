@@ -20,10 +20,12 @@ void Server<Derived, Connection>::run(int port) {
 template <class Derived, class Connection>
 void Server<Derived, Connection>::listen() {
     std::shared_ptr<Connection> connection = Connection::create(this->io_service_);
-    this->acceptor_->async_accept(connection->socket(), [this, connection] (const boost::system::error_code& error) {
+    this->acceptor_->async_accept(connection->socket(), [this, &connection] (const boost::system::error_code& error) {
         if (!error) {
             this->client_connected(connection);
             connection->execute();
+            this->connections_.push_back(connection);
         } else std::cerr << error << std::endl;
+        this->listen();
     });
 }

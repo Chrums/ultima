@@ -128,6 +128,19 @@ graphics/fast:
 .PHONY : graphics/fast
 
 #=============================================================================
+# Target rules for targets named input
+
+# Build rule for target.
+input: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 input
+.PHONY : input
+
+# fast build rule for target.
+input/fast:
+	$(MAKE) -f input/CMakeFiles/input.dir/build.make input/CMakeFiles/input.dir/build
+.PHONY : input/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -163,6 +176,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... proto"
 	@echo "... graphics"
+	@echo "... input"
 	@echo "... client"
 	@echo "... server"
 .PHONY : help
